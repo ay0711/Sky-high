@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Load testimonials from API
 async function loadTestimonials() {
     try {
-        const response = await fetch('http://localhost:5000/api/testimonials');
+    const response = await fetch('https://sky-high-zcxt.onrender.com/api/testimonials');
         const data = await response.json();
         
         if (data.success && data.testimonials) {
@@ -172,7 +172,7 @@ function initializeTrackingForm() {
             
             try {
                 console.log('Sending tracking request for:', trackingId);
-                const response = await fetch('http://localhost:5000/api/track', {
+                const response = await fetch('https://sky-high-zcxt.onrender.com/api/track', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showContactMessage('Sending your message...', 'loading');
             
             try {
-                const response = await fetch('http://localhost:5000/api/contact', {
+                const response = await fetch('https://sky-high-zcxt.onrender.com/api/contact', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showPickupMessage('Submitting your pickup request...', 'loading');
             
             try {
-                const response = await fetch('http://localhost:5000/api/pickup-request', {
+                const response = await fetch('https://sky-high-zcxt.onrender.com/api/pickup-request', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -692,7 +692,7 @@ function setupShipmentModal() {
             showShipmentMessage('Calculating shipping cost...', 'loading');
             
             try {
-                const response = await fetch('http://localhost:5000/api/shipping-quote', {
+                const response = await fetch('https://sky-high-zcxt.onrender.com/api/shipping-quote', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -749,7 +749,7 @@ function setupShipmentModal() {
             showShipmentMessage('Creating your shipment...', 'loading');
             
             try {
-                const response = await fetch('http://localhost:5000/api/create-shipment', {
+                const response = await fetch('https://sky-high-zcxt.onrender.com/api/create-shipment', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
