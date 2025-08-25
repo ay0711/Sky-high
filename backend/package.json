@@ -1,0 +1,35 @@
+{
+  "name": "sky-high-logistics",
+  "version": "1.0.0",
+  "description": "Sky High Logistics - Courier and Delivery Service Website",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js",
+    "build": "npm install",
+    "install-deps": "npm install"
+  },
+  "keywords": [
+    "logistics",
+    "courier",
+    "delivery",
+    "shipping",
+    "express",
+    "nodejs"
+  ],
+  "author": "Sky High Logistics",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

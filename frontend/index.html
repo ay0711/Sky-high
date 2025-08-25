@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky High Logistics - Courier & Delivery Service</title>
+  <link rel="stylesheet" href="styles-modern.css">
+  <link rel="stylesheet" href="testimonials.css">
+</head>
+
+<body>
+  <header>
+    <div class="hero-image">
+      <img src="image/van.jpg" alt="Sky High Logistics Van">
+    </div>
+  </header>
+  <nav class="Menu">
+    <div class="container">
+      <div class="logo">Sky High</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#track">Track Shipment</a></li>
+        <li><a href="#request">Request Pickup</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" data-aos="fade-up">
+    <div class="container">
+      <h1 data-aos="zoom-in">Sky High Logistics</h1>
+      <p>We Deliver Above & Beyond</p>
+      <div class="hero-buttons">
+        <button onclick="document.getElementById('track').scrollIntoView();">Track Your Package</button>
+        <button onclick="document.getElementById('request').scrollIntoView();">Request Pickup</button>
+      </div>
+      <div class="highlights">
+        <p>Fast, Reliable & Secure Deliveries</p>
+        <p>Nationwide & International Coverage</p>
+      </div>
+      <div class="testimonials">
+        <blockquote>Excellent service! My package arrived ahead of schedule. – Happy Client</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section" data-aos="fade-up">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <p class="testimonials-subtitle">Real feedback from our satisfied customers across Nigeria</p>
+
+      <div class="testimonials-wrapper">
+        <div class="testimonials-scroller" id="testimonials-scroller">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Adebayo Oluwaseun</h4>
+                <span>Lagos, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"Sky High Logistics delivered my documents from Lagos to Abuja in record time. Their tracking system kept
+              me informed every step of the way. Exceptional service!"</p>
+            <span class="testimonial-date">2 days ago</span>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Chinedu Okoro</h4>
+                <span>Port Harcourt, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"I've used many courier services, but Sky High stands out. They handled my fragile electronics with great
+              care and delivered on time. Highly recommended!"</p>
+            <span class="testimonial-date">5 days ago</span>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Fatima Ibrahim</h4>
+                <span>Kano, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"Amazing customer service! When my package was delayed due to weather, they immediately contacted me and
+              provided updates. Professional and reliable."</p>
+            <span class="testimonial-date">1 week ago</span>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Emmanuel Udoh</h4>
+                <span>Calabar, Nigeria</span>
+              </div>
+              <div class="rating">★★★★☆</div>
+            </div>
+            <p>"Fast, efficient, and affordable. Sky High helped me ship my products to customers across Nigeria. Their
+              logistics network is impressive!"</p>
+            <span class="testimonial-date">1 week ago</span>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Blessing Okafor</h4>
+                <span>Enugu, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"I needed urgent delivery for a legal document, and Sky High came through for me. Same-day delivery
+              within the city - absolutely fantastic!"</p>
+            <span class="testimonial-date">2 weeks ago</span>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Musa Abdullahi</h4>
+                <span>Kaduna, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"Reliable and trustworthy. I've been using Sky High for my business shipments for over a year. Never had
+              a lost package!"</p>
+            <span class="testimonial-date">2 weeks ago</span>
+          </div>
+
+          <!-- Testimonial 7 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Ngozi Okechukwu</h4>
+                <span>Owerri, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"The online tracking system is so convenient! I could see exactly where my package was at all times.
+              Modern logistics at its best."</p>
+            <span class="testimonial-date">3 weeks ago</span>
+          </div>
+
+          <!-- Testimonial 8 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Taiwo Adebisi</h4>
+                <span>Ibadan, Nigeria</span>
+              </div>
+              <div class="rating">★★★★☆</div>
+            </div>
+            <p>"Good service overall. The delivery was on time and the package arrived in perfect condition. Will
+              definitely use them again."</p>
+            <span class="testimonial-date">3 weeks ago</span>
+          </div>
+
+          <!-- Testimonial 9 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Amina Hassan</h4>
+                <span>Jos, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"Excellent customer support! When I had questions about my shipment, their team was very helpful and
+              responsive. Top-notch service!"</p>
+            <span class="testimonial-date">1 month ago</span>
+          </div>
+
+          <!-- Testimonial 10 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Olumide Ajayi</h4>
+                <span>Abeokuta, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"Sky High Logistics has revolutionized how I handle deliveries for my e-commerce business. Fast,
+              reliable, and cost-effective!"</p>
+            <span class="testimonial-date">1 month ago</span>
+          </div>
+
+          <!-- Duplicate testimonials for seamless loop -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Adebayo Oluwaseun</h4>
+                <span>Lagos, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"Sky High Logistics delivered my documents from Lagos to Abuja in record time. Their tracking system kept
+              me informed every step of the way. Exceptional service!"</p>
+            <span class="testimonial-date">2 days ago</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="customer-info">
+                <h4>Chinedu Okoro</h4>
+                <span>Port Harcourt, Nigeria</span>
+              </div>
+              <div class="rating">★★★★★</div>
+            </div>
+            <p>"I've used many courier services, but Sky High stands out. They handled my fragile electronics with great
+              care and delivered on time. Highly recommended!"</p>
+            <span class="testimonial-date">5 days ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-stats" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-item">
+          <span class="stat-number">1,000+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">99.7%</span>
+          <span class="stat-label">On-Time Delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Tracking-->
+  <section id="track" data-aos="zoom-in">
+    <div class="container">
+      <h2>Track Your Shipment</h2>
+      <form id="tracking-form">
+        <input type="text" id="trackingId" placeholder="Enter Tracking ID" required>
+        <button type="submit" data-aos="fade-up" data-aos-delay="200">Track</button>
+      </form>
+      <div id="tracking-result"></div>
+    </div>
+  </section>
+
+  <!-- Request Pickup -->
+  <section id="request" data-aos="fade-in">
+    <div class="container">
+      <h2>Request Pickup</h2>
+      <p>Need a package picked up? Click the button below to schedule a pickup.</p>
+      <button onclick="requestPickup()" class="pickup-btn">Schedule Pickup</button>
+    </div>
+  </section>
+  <!-- Services -->
+  <section id="services" data-aos="fade-left">
+    <div class="container">
+      <img src="image/two delivery.jpg" alt="Our Services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Local Delivery</li>
+        <li>International Shipping</li>
+        <li>Same-Day Express</li>
+        <li>E-commerce Integration</li>
+        <li>Warehousing & Fulfillment</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="formResponse"></div>
+    </div>
+  </section>
+  <!-- FAQs -->
+  <section id="faq" data-aos="fade-down">
+    <h2>FAQs</h2>
+    <p><strong>Q:</strong> How long does delivery take?</p>
+    <p><strong>A:</strong> It depends on location and service type. Same-day and next-day options available.</p>
+  </section>
+  <!-- About Us -->
+  <section id="about" data-aos="fade-right">
+    <h2>About Us</h2>
+    <p>At Sky High Logistics, we take your deliveries to new heights. With a passion for precision and a commitment to
+      speed, we offer reliable courier and logistics solutions that keep your world moving.</p>
+    <p>Since our inception, we've dedicated ourselves to bridging distances, empowering businesses, and delivering
+      smiles one package at a time.</p>
+    <p>Whether it’s an urgent document or bulk logistics, Sky High gets it there safely, swiftly, and securely.</p>
+
+  </section>
+  <!-- Blog -->
+  <section id="blog" data-aos="flip-up">
+    <h2>Logistics Tips & News</h2>
+    <ul>
+      <li><a href="#">5 Things to Know Before Shipping Internationally</a></li>
+      <li><a href="#">How to Track Your Delivery in Real-Time</a></li>
+      <li><a href="#">Same-Day Delivery: What Businesses Need to Know</a></li>
+    </ul>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Sky High Logistics</h3>
+        <p>Delivering above & beyond — locally and globally.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#track">Track</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Email: info@skyhcourier.com</p>
+        <p>Phone: +234 XXX XXX XXXX</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sky High Logistics. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <script src="tracking-simple.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
